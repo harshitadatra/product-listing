@@ -1,9 +1,9 @@
-import React from 'react'
-import { useProduct } from '../Context/filter-context';
+import React from "react";
+import { useProduct } from "../Context/filter-context";
 
 const Filter = () => {
-     const { productState, productDispatch } = useProduct();
-     const { gender, brand, size, sortBy } = productState;
+  const { productState, productDispatch } = useProduct();
+  const { gender, brand, size, sortBy } = productState;
   return (
     <>
       <section className="aside-container">
@@ -72,7 +72,7 @@ const Filter = () => {
             Allen Solly
           </label>
         </div>
-        <div >
+        <div>
           <label>
             <input
               type="checkbox"
@@ -94,7 +94,7 @@ const Filter = () => {
             Men
           </label>
         </div>
-        <div >
+        <div>
           <label>
             <input
               type="checkbox"
@@ -134,6 +134,6 @@ const Filter = () => {
       </section>
     </>
   );
-}
+};
 
-export default Filter
+export default Filter;
